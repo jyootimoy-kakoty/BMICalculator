@@ -115,3 +115,9 @@ body {
     border-radius: 12px;
     visibility: hidden;
 }
+@media screen and (max-width: 600px) {
+    body {
+        transform: scale(1.2);
+    }
+    
+}
