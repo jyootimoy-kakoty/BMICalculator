@@ -49,11 +49,11 @@ let submitButton = document.querySelector('.submitBtn').addEventListener('click'
             result.innerHTML = `BMI: ${BMI}. You're Healthy!👌`;//Press Windows + . for the emoji window pop-up
             document.querySelector('.output').style.color = 'Green';
         }
-        else if(BMI >= 25 && BMI <=29) {
+        else if(BMI > 24 && BMI <=29) {
             result.innerHTML = `BMI: ${BMI}. You're Overweight!🎅`;
             document.querySelector('.output').style.color = 'Orange';
         }
-        else if(BMI >= 30 && BMI <=39) {
+        else if(BMI > 30 && BMI <=39) {
             result.innerHTML = `BMI: ${BMI}. You're Obese! ⚠`;
             document.querySelector('.output').style.color = 'Red';
         }
