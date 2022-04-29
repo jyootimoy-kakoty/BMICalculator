@@ -53,7 +53,7 @@ let submitButton = document.querySelector('.submitBtn').addEventListener('click'
             result.innerHTML = `BMI: ${BMI}. You're Overweight!🎅`;
             document.querySelector('.output').style.color = 'Orange';
         }
-        else if(BMI > 30 && BMI <=39) {
+        else if(BMI > 29 && BMI <=39) {
             result.innerHTML = `BMI: ${BMI}. You're Obese! ⚠`;
             document.querySelector('.output').style.color = 'Red';
         }
