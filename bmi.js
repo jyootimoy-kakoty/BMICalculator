@@ -1,11 +1,13 @@
 /*BMI calculator*/
-var weightKg, weightGm, height, heightFeet, heightInch, BMI;
+var weightKg, weightGm, height, heightFeet, heightInch, heightI, heightF, BMI;
 //alert(`enter weight (Kg): ${weight = Event.key}`);
 //alert(`enter height (Feet): ${height = Event.key}`);
 weightKg = 0;//prompt("Please enter your Weight (Kg.Gm)", 0.00);
 heightFeet = 0;//prompt("Please enter your Height (Feet.Inch)", 0.00);
 weightGm = 0;
 heightInch = 0;
+heightI = 0;
+heightF = 0;
 
 document.getElementById('weightKg').addEventListener('change', function getWeightKg() {
     weightKg = parseFloat(document.getElementById('weightKg').value) || 0; 
@@ -23,10 +25,10 @@ document.getElementById('heightInch').addEventListener('change', function getHei
 function calculate() {
     document.getElementById('heightInch').value = heightInch;
     document.getElementById('weightGm').value = weightGm;
-    heightInch = 0.0254 * heightInch;
-    heightFeet = 0.3048 * heightFeet;
+    heightI = 0.0254 * heightInch;
+    heightF = 0.3048 * heightFeet;
     //console.log(1, heightFeet, heightInch);
-    let heightM2 = heightFeet + heightInch;
+    let heightM2 = heightF + heightI;
     let weight = weightKg + weightGm;
     //console.log(2, heightFeet, heightInch, heightM2, weight);
     BMI = weight / (heightM2 ** 2);
