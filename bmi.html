@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <link rel="stylesheet" href="./bmi.css"/>
+    </header>
+    <body>
+        <div id="elements">
+            <div class="header">
+                Body mass index (BMI) is a measure of body fat based on height and weight that applies to adult men and women.
+            </div>
+            <div class="inputs">
+                <div id="input1">
+                    <label>Weight</label>
+                    <input type="number" id="weightKg" placeholder="Kg" data-uppercase></input>
+                    <input type="number" max="999" id="weightGm" placeholder="Gram" data-uppercase></input>
+                </div>
+                <div id="input2">
+                    <label>Height</label>
+                    <input type="number" id="heightFeet" placeholder="Feet" data-uppercase></input>
+                    <input type="number" max="11" id="heightInch" placeholder="Inch" data-uppercase></input>
+                </div>
+            </div>
+            <div class="events">
+                <h4>Let's calculate!</h4>
+                <button class="btn submitBtn btnAnimated">Submit</button>
+            </div>
+            <div class="output">
+                <span class="comment"></span>
+                <span class="underWeight">😢</span>
+                <span class="healthy">👌</span>
+                <span class="overWeight">🎅</span>
+                <span class="obese">⚠</span>
+                <span class="extremelyObese">⚡</span>
+            </div>
+        </div>
+    </body>
+    <script src="./bmi.js"></script>
+</html>
