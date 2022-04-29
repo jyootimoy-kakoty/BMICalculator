@@ -29,7 +29,7 @@ function calculate() {
     heightF = 0.3048 * heightFeet;
     //console.log(1, heightFeet, heightInch);
     let heightM2 = heightF + heightI;
-    let weight = weightKg + weightGm;
+    let weight = weightKg + weightGm/1000;
     //console.log(2, heightFeet, heightInch, heightM2, weight);
     BMI = weight / (heightM2 ** 2);
 }
